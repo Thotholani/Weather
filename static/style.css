@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    color: #51575B;
+}
+
+img {
+    max-width: 100%;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 350px;
+    width: 80%;
+}
+
+
+/* globals */
+
+.weather {
+    background-color: #D8D6D2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    background-color: #DCDAD7;
+    padding: .5em 2em;
+    border-radius: .2rem;
+    border: 2px solid #CFCCC8;
+}
+
+.input-box {
+    display: block;
+    width: 100%;
+    height: 2.5em;
+    background-color: #E8F0FE;
+    border: 2px solid #CFCCC8;
+    border-radius: .1em;
+    outline-color: #3C82BE;
+}
+
+.input-box::placeholder {
+    font-size: 1.5rem;
+}
+
+.icon-sun {
+    font-size: 10rem !important;
+    text-align: center !important;
+    background: -moz-linear-gradient(top, #FCC025 0%, #F34D2A 100%);
+    background: -webkit-linear-gradient(top, #FCC025 0%, #F34D2A 100%);
+    background: linear-gradient(to bottom, #FCC025 0%, #F34D2A 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading {
+    font-size: clamp(3rem, 7vw, 5rem);
+    text-align: center;
+    margin: .3em 0;
+}
+
+.radio-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio {
+    display: flex;
+}
+
+.radio+.radio {
+    margin-left: 6em;
+}
+
+.radio-label {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.sun {
+    color: #FDD624;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-self: center;
+}
+
+.btn {
+    margin-top: 1em;
+    background-color: #356D9D;
+    padding: 1em 3em;
+    outline: none;
+    font-size: 2rem;
+    border-radius: .2em;
+    display: inline-block;
+    font-weight: 700;
+    color: #FFF;
+    width: 100%;
+    transition-duration: .3s;
+    border: 1px solid #356D9D;
+    box-shadow: 0px 53px inset #3C82BE;
+    text-align: center !important;
+}
+
+.btn:hover {
+    background-color: #27557e;
+    box-shadow: #27557e;
+    cursor: pointer;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 290px) {
+    .radio-buttons {
+        display: block;
+        margin: 0;
+    }
+    .radio-buttons {
+        margin-top: 1em;
+    }
+    .radio+.radio {
+        margin: 0;
+    }
+    .btn {
+        font-size: clamp(1.3rem, 2vw, 2rem);
+    }
+}
