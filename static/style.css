@@ -1,148 +1,180 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    margin: 0;
-    color: #51575B;
+  margin: 0;
+  color: #51575b;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .center {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 350px;
-    width: 80%;
+  margin: 0 auto;
+  max-width: 350px;
+  width: 80%;
 }
-
 
 /* globals */
 
 .weather {
-    background-color: #D8D6D2;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+  background-color: #d8d6d2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .card {
-    background-color: #DCDAD7;
-    padding: .5em 2em;
-    border-radius: .2rem;
-    border: 2px solid #CFCCC8;
+  background-color: #dcdad7;
+  padding: 1.3em 2em;
+  border-radius: 0.2rem;
+  border: 2px solid #cfccc8;
 }
 
 .input-box {
-    display: block;
-    width: 100%;
-    height: 2.5em;
-    background-color: #E8F0FE;
-    border: 2px solid #CFCCC8;
-    border-radius: .1em;
-    outline-color: #3C82BE;
+  display: block;
+  width: 100%;
+  height: 2.5em;
+  background-color: #e8f0fe;
+  border: 2px solid #cfccc8;
+  border-radius: 0.1em;
+  outline-color: #3c82be;
 }
 
 .input-box::placeholder {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .icon-sun {
-    font-size: 10rem !important;
-    text-align: center !important;
-    background: -moz-linear-gradient(top, #FCC025 0%, #F34D2A 100%);
-    background: -webkit-linear-gradient(top, #FCC025 0%, #F34D2A 100%);
-    background: linear-gradient(to bottom, #FCC025 0%, #F34D2A 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 10rem !important;
+  text-align: center !important;
+  background: -moz-linear-gradient(top, #fcc025 0%, #f34d2a 100%);
+  background: -webkit-linear-gradient(top, #fcc025 0%, #f34d2a 100%);
+  background: linear-gradient(to bottom, #fcc025 0%, #f34d2a 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .heading {
-    font-size: clamp(3rem, 7vw, 5rem);
-    text-align: center;
-    margin: .3em 0;
+  font-size: clamp(3rem, 7vw, 5rem);
+  text-align: center;
+  margin: 0.3em 0;
+}
+
+.subheading {
+  font-size: clamp(2rem, 6vw, 4rem);
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.description {
+  color: #f34d2a;
+  text-transform: capitalize;
+  margin: 0;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
 }
 
 .radio-buttons {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .radio {
-    display: flex;
+  display: flex;
 }
 
-.radio+.radio {
-    margin-left: 6em;
+.radio + .radio {
+  margin-left: 6em;
 }
 
 .radio-label {
-    font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 .sun {
-    color: #FDD624;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    align-self: center;
+  color: #fdd624;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-self: center;
 }
 
 .btn {
-    margin-top: 1em;
-    background-color: #356D9D;
-    padding: 1em 3em;
-    outline: none;
-    font-size: 2rem;
-    border-radius: .2em;
-    display: inline-block;
-    font-weight: 700;
-    color: #FFF;
-    width: 100%;
-    transition-duration: .3s;
-    border: 1px solid #356D9D;
-    box-shadow: 0px 53px inset #3C82BE;
-    text-align: center !important;
+  margin-top: 1em;
+  background-color: #356d9d;
+  padding: 1em 3em;
+  outline: none;
+  font-size: 2rem;
+  border-radius: 0.2em;
+  display: inline-block;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  transition-duration: 0.3s;
+  border: 1px solid #356d9d;
+  box-shadow: 0px 53px inset #3c82be;
+  text-align: center !important;
 }
 
 .btn:hover {
-    background-color: #27557e;
-    box-shadow: #27557e;
-    cursor: pointer;
+  background-color: #27557e;
+  box-shadow: #27557e;
+  cursor: pointer;
 }
 
 .btn:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 @media (max-width: 290px) {
-    .radio-buttons {
-        display: block;
-        margin: 0;
-    }
-    .radio-buttons {
-        margin-top: 1em;
-    }
-    .radio+.radio {
-        margin: 0;
-    }
-    .btn {
-        font-size: clamp(1.3rem, 2vw, 2rem);
-    }
+  .radio-buttons {
+    display: block;
+    margin: 0;
+  }
+  .radio-buttons {
+    margin-top: 1em;
+  }
+  .radio + .radio {
+    margin: 0;
+  }
+  .btn {
+    font-size: clamp(1.3rem, 2vw, 2rem);
+  }
+}
+
+.footer {
+  color: #878787;
+  font-size: 1.3rem;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  color: #27557e;
 }
